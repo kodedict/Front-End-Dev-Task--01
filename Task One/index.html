@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>test</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div style="margin-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 style="font-weight: 700;">Invoice Generator</h1>
+                    <p style="font-weight: 400;">Kindly fill the fields.</p>
+                </div>
+                <div class="col-md-12">
+                    <form class="invoiceForm" onsubmit="return activateModal()">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-group"><label>Invoice Number</label><input class="form-control validateInput" type="text" id="validateInput" required=""></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><label>Invoice Description</label><input class="form-control" type="text" required=""></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><label>Invoice Amount</label><input class="form-control" type="text" required=""></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><label>Invoice Date</label><input class="form-control" type="date" required=""></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><label>Delivery Date</label><input class="form-control" type="date" required=""></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><label>Settle Date</label><input class="form-control" type="date" required=""></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><label>Invoice VAT</label><select class="form-control" required=""><option value="" selected="">Select Invoice VAT</option><option value="998">1000</option><option value="2000">2000</option></select></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><label>Currency</label><select class="form-control" required=""><option value="" selected="">Select Currency</option><option value="NGN">NGN</option><option value="USD">USD</option><option value="EUR">EUR</option></select></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><label>Exchange Rate</label><select class="form-control" required=""><option value="" selected="">Select Exchange Rate</option><option value="1/300">1/300</option><option value="1/400">1/400</option></select></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><label>Client</label><select class="form-control" required=""><option value="" selected="">Select Client</option><option value="Tunde Smart Group">Tunde Smart Group</option><option value="Agape Farms">Agape Farms</option></select></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><label>Order Number</label><input class="form-control" type="text" required=""></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><label>Sales Agent</label><input class="form-control" type="text" required=""></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><button class="btn btn-primary" type="submit">Save Invoice</button></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="invoiceModal">
+        <div class="invoiceModalContent">
+            <p>Your invoice has been saved successfully</p><button class="btn btn-primary" type="button" onclick="return closeModal()">Close</button></div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

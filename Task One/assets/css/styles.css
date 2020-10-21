@@ -1,0 +1,57 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.invoiceForm label {
+  color: #190469;
+  font-weight: 300;
+}
+
+.invoiceForm input, .invoiceForm select {
+  border: #190469 solid 1px;
+  border-radius: 0;
+  height: 50px;
+}
+
+.invoiceForm button {
+  width: 50%;
+  border-radius: 0;
+  height: 50px;
+  border: 0;
+  background-color: #070021;
+}
+
+#invoiceModal {
+  background-color: rgba(3,0,7,0.4);
+  height: 100%;
+  display: none;
+  position: fixed;
+  padding: 150px 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.invoiceModalContent {
+  width: 700px;
+  margin: 0px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.invoiceModalContent button {
+  border: 0;
+  width: 30%;
+  background-color: #052807;
+  height: 50px;
+  border-radius: 0;
+}
+
+@media (max-width: 414px) {
+  .invoiceModalContent {
+    text-align: left;
+  }
+}
+
