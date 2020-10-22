@@ -2,6 +2,6 @@
  Task Solutions
 
 # Guidelines for Task two 
-Clone the project locally
+<p>Clone the project locally<p>
 run npm install in terminal
 run npm start
