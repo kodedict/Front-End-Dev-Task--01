@@ -1,0 +1,104 @@
+::placeholder {
+  color: #fff !important;
+  text-transform: initial;
+}
+
+.img-fluid.imgCover {
+  transition: transform .3s ease,opacity .3s;
+}
+
+.listOuter {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.listOuter:hover .imgCover {
+  transform: scale(1.2);
+}
+
+.listContent h3 {
+  color: #430426;
+}
+
+.col-md-6.listCover {
+  padding: 20px 0;
+}
+
+.col-md-4.imgDiv {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.row.listRow {
+  padding: 15px;
+}
+
+.mainListCover {
+  margin-top: 50px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+
+.recipeDiv {
+  max-width: 500px;
+  margin: 0 auto 25px;
+}
+
+.form-group input {
+  height: 50px;
+  border-radius: 0;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 20px;
+}
+
+.form-group button {
+  width: 100%;
+  background-color: #430426;
+  height: 50px;
+  font-weight: 600;
+  font-size: 25px;
+  border-radius: 0;
+  border: 0;
+}
+
+.container.searchFormInner {
+  color: #fff;
+}
+
+.searchFormInner h1 {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.searchFormInner h3 {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  font-weight: normal;
+}
+
+.searchFormCover {
+  height: 200px;
+}
+
+.searchFormOuter {
+  height: inherit;
+  min-height: inherit;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: rgba(30,41,99,0.53);
+}
+
+.searchFormDiv {
+  background-image: url("https://images.pexels.com/photos/3166839/pexels-photo-3166839.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  min-height: 100vh;
+  background-position: bottom !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
